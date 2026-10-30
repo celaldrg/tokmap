@@ -1,0 +1,16 @@
+[package]
+name = "tokmap"
+version = "0.1.0"
+edition = "2021"
+description = "See where your repo's tokens go before an AI agent reads it: a token budget map of files and folders"
+license = "MIT"
+repository = "https://github.com/celaldrg/tokmap"
+readme = "README.md"
+keywords = ["llm", "tokens", "ai-agents", "cli", "context"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+
+[profile.release]
+strip = true
+lto = true
